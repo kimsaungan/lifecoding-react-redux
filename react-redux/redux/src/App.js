@@ -11,12 +11,10 @@ class App extends Component{
 
     render() {
         return (
-            <div claasName="App">
+            <div className="App">
                 <h1>hi</h1>
-                <AddNumberRoot onClick={function (size){
-                    this.setState({number: this.state.number + size})
-                }.bind(this)}></AddNumberRoot>
-                <DisplayNumberRoot number={this.state.number}></DisplayNumberRoot>
+                <AddNumberRoot></AddNumberRoot>
+                <DisplayNumberRoot></DisplayNumberRoot>
             </div>
         );
     }
